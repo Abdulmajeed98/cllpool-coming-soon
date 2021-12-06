@@ -1,0 +1,98 @@
+/* !font imports  */
+@import url("./fonts/uni-sirwan-font/uni-sirwan-stylesheet.css");
+@import url("./fonts/digital-dream-font/digital-dream-stylesheet.css");
+
+/* css variables */
+:root {
+  --bg-gradient: linear-gradient(
+    45deg,
+    rgba(0, 204, 154, 0.65) 0%,
+    rgba(0, 171, 217, 0.65) 100%
+  );
+  --font-family: "unisirwan", Arial, Helvetica, sans-serif;
+  --digital-font-family: "Digital Dream";
+}
+
+/* global styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: normal;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    var(--bg-gradient), url("./images/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* custom styles */
+.cllpool__header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cllpool__header__logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cllpool__header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cllpool__header__title h1 {
+  font-size: 450%;
+  font-weight: medium;
+}
+
+.cllpool__header__title h3 {
+  font-size: 325%;
+  font-weight: normal;
+}
+
+.cllpool__header__social-media {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.cllpool__header__social-media a {
+  text-decoration: none;
+  color: white;
+}
+
+.cllpool__header__social-media a > i {
+  font-size: 200%;
+  transition: all 0.5s ease;
+  opacity: 0.7;
+}
+
+.cllpool__header__social-media a > i:hover {
+  cursor: pointer;
+  scale: 1.5;
+  transform: translateY(-5px);
+  opacity: 1;
+}

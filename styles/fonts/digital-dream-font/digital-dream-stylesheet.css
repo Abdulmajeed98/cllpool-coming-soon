@@ -1,0 +1,29 @@
+/*! Font Face Declarations */
+
+@font-face {
+  font-family: "Digital Dream";
+  src: url("./DIGITALDREAM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Digital Dream";
+  src: url("./DIGITALDREAMFAT.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Digital Dream";
+  src: url("./DIGITALDREAMFATNARROW.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Digital Dream";
+  src: url("./DIGITALDREAMFATSKEW.ttf") format("truetype");
+  font-weight: normal;
+  font-style: oblique;
+}
