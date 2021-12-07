@@ -147,6 +147,10 @@ body {
   .cllpool__header__title h3 {
     font-size: 350%;
   }
+
+  .cllpool__header__logo {
+    transform: scale(0.5) translateY(-40%);
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -155,6 +159,6 @@ body {
   }
 
   .cllpool__header__logo {
-    transform: scale(0.6) translateY(-50%);
+    transform: scale(0.4) translateY(-30%);
   }
 }
