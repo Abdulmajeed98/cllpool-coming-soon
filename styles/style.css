@@ -26,6 +26,7 @@ body {
   overflow: hidden;
   font-family: var(--font-family);
   font-size: 1rem;
+  line-height: 3rem;
   font-weight: normal;
   height: 100vh;
   width: 100vw;
@@ -69,6 +70,7 @@ body {
 .cllpool__header__title h3 {
   font-size: 325%;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .cllpool__header__social-media {
@@ -104,8 +106,27 @@ body {
   body {
     font-size: 0.75rem;
   }
+  .cllpool__header__title {
+    gap: 2rem;
+  }
 }
 
+@media screen and (min-width: 871px) {
+  .cllpool__header__title {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .cllpool__countdown {
+    width: 100%;
+  }
+  .cllpool__countdown > #flipdown {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 652px) {
   body {
     font-size: 0.6rem;
@@ -126,14 +147,14 @@ body {
   .cllpool__header__title h3 {
     font-size: 350%;
   }
+}
 
-  .cllpool__countdown {
-    width: 90%;
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 0.5rem;
   }
-  .cllpool__countdown > #flipdown {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .cllpool__header__logo {
+    transform: scale(0.6) translateY(-50%);
   }
 }
