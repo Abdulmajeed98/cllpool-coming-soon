@@ -9,6 +9,7 @@
     rgba(0, 204, 154, 0.65) 0%,
     rgba(0, 171, 217, 0.65) 100%
   );
+  --dark-bg-layer: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   --font-family: "unisirwan", Arial, Helvetica, sans-serif;
   --digital-font-family: "Digital Dream";
 }
@@ -30,8 +31,8 @@ body {
   font-weight: normal;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    var(--bg-gradient), url("./images/bg-img.jpg");
+  background-image: var(--dark-bg-layer), var(--bg-gradient),
+    url("./images/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -140,7 +141,11 @@ body {
 }
 
 @media screen and (max-width: 522px) {
-  .cllpool__header__title h1 {
+  /* .cllpool__header__title h1 {
+    text-align: center;
+  } */
+
+  .cllpool__header__title {
     text-align: center;
   }
 
