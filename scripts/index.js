@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const launchText = document.querySelector('.cllpool__header__title');
-    const countDownDate = 1644958799000 / 1000;
+    const countDownDate = 1646168399000 / 1000;
     const date = new Date(countDownDate * 1000);
     const options = { year: 'numeric', month: 'long', day: 'numeric' }
     console.log(date.toLocaleDateString('en-US', options));
